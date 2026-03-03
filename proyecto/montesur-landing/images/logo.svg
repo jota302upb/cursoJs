@@ -1,0 +1,22 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A934E" />
+      <stop offset="100%" stop-color="#4B6323" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&amp;display=swap');
+    </style>
+  </defs>
+  
+  <!-- Improved 'M' Mountain - Aligned and Proportional -->
+  <path d="M5 29C5 29 12 11 20 11C28 11 32 20 35 20C38 20 42 11 50 11C58 11 65 29 65 29" 
+        stroke="url(#logoGradient)" 
+        stroke-width="9" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        transform="translate(2, 0)"/>
+        
+  <!-- Adjusted starting 'x' and slightly reduced letter-spacing to prevent overlap while staying unified -->
+  <text x="72" y="29" fill="white" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="24" letter-spacing="-0.02em">ontesur</text>
+</svg>

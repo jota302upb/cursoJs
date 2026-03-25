@@ -26,18 +26,21 @@
         <div class="container nav-content">
             <img src="images/logo.svg" alt="Montesur" class="logo-img">
             <ul class="nav-links">
-                <li><a href="#hero" class="nav-link">Inicio</a></li>
-                <li><a href="#services" class="nav-link">Servicios</a></li>
-                <li><a href="#about" class="nav-link">Nosotros</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#hero" class="nav-link" data-i18n="nav-home">Inicio</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav-services">Servicios</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">Nosotros</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="#contact" class="btn btn-primary">Conectar</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="nav-connect">Conectar</a>
             </div>
-            <div class="mobile-menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="mobile-actions">
+                <button class="btn-lang" id="lang-toggle">EN</button>
+                <div class="mobile-menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -45,14 +48,14 @@
     <header class="hero" id="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="label-top">🥑 COMPROMISO CON LA EXCELENCIA</span>
-                <h1 class="hero-title">Del Corazón de la Tierra a tu <span class="glow-text">Bienestar Integral</span>
+                <span class="label-top" data-i18n="hero-label">🥑 COMPROMISO CON LA EXCELENCIA</span>
+                <h1 class="hero-title"><span data-i18n="hero-title-prefix">Del Corazón de la Tierra a tu </span><span class="glow-text" data-i18n="hero-title-glow">Bienestar Integral</span>
                 </h1>
-                <p class="hero-subtitle">Transformamos la pureza del aguacate Hass en soluciones innovadoras y productos
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Transformamos la pureza del aguacate Hass en soluciones innovadoras y productos
                     naturales que conectan con tu salud.</p>
                 <div class="hero-actions">
-                    <a href="#services" class="btn btn-primary btn-glow">Explorar Calidad</a>
-                    <a href="#about" class="btn btn-outline">Nuestra Historia</a>
+                    <a href="#services" class="btn btn-primary btn-glow" data-i18n="hero-action-explore">Explorar Calidad</a>
+                    <a href="#about" class="btn btn-outline" data-i18n="hero-action-history">Nuestra Historia</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -69,19 +72,19 @@
 
     <section class="social-proof">
         <div class="container">
-            <p class="section-label">RESPALDADOS POR LA TIERRA Y LA CIENCIA</p>
+            <p class="section-label" data-i18n="social-label">RESPALDADOS POR LA TIERRA Y LA CIENCIA</p>
             <div class="metrics-grid">
                 <div class="metric-item">
                     <h2 class="metric-value" data-target="39">0</h2>
-                    <p class="metric-label">Hectáreas Propias</p>
+                    <p class="metric-label" data-i18n="metric-hectares">Hectáreas Propias</p>
                 </div>
                 <div class="metric-item">
                     <h2 class="metric-value" data-target="200">0</h2>
-                    <p class="metric-label">Clientes Satisfechos</p>
+                    <p class="metric-label" data-i18n="metric-clients">Clientes Satisfechos</p>
                 </div>
                 <div class="metric-item">
                     <h2 class="metric-value" data-target="100">0</h2>
-                    <p class="metric-label">% Sostenible</p>
+                    <p class="metric-label" data-i18n="metric-sustainable">% Sostenible</p>
                 </div>
             </div>
         </div>
@@ -89,7 +92,7 @@
 
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title text-center">Nuestra Propuesta de Valor</h2>
+            <h2 class="section-title text-center" data-i18n="services-title">Nuestra Propuesta de Valor</h2>
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card-flip">
@@ -98,16 +101,16 @@
                             <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800"
                                 alt="Agricultura" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Excelencia Agrícola</h3>
+                                <h3 class="service-title-front" data-i18n="srv1-front">Excelencia Agrícola</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Agro Premium</h3>
-                            <p class="service-description">Cultivamos aguacate Hass con los más altos estándares de
+                            <h3 class="service-title-back" data-i18n="srv1-back-title">Agro Premium</h3>
+                            <p class="service-description" data-i18n="srv1-back-desc">Cultivamos aguacate Hass con los más altos estándares de
                                 calidad internacional.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Hass Export</span>
-                                <span class="feature-tag">Control Bio</span>
+                                <span class="feature-tag" data-i18n="srv1-tag1">Hass Export</span>
+                                <span class="feature-tag" data-i18n="srv1-tag2">Control Bio</span>
                             </div>
                         </div>
                     </div>
@@ -120,16 +123,16 @@
                             <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
                                 alt="Exportación" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Calidad de Exportación</h3>
+                                <h3 class="service-title-front" data-i18n="srv2-front">Calidad de Exportación</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Alcance Global</h3>
-                            <p class="service-description">Logística avanzada para llevar la frescura del campo a
+                            <h3 class="service-title-back" data-i18n="srv2-back-title">Alcance Global</h3>
+                            <p class="service-description" data-i18n="srv2-back-desc">Logística avanzada para llevar la frescura del campo a
                                 mercados internacionales.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Logística</span>
-                                <span class="feature-tag">Frescura</span>
+                                <span class="feature-tag" data-i18n="srv2-tag1">Logística</span>
+                                <span class="feature-tag" data-i18n="srv2-tag2">Frescura</span>
                             </div>
                         </div>
                     </div>
@@ -142,16 +145,16 @@
                             <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
                                 alt="Productos Naturales" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Cuidado Personal</h3>
+                                <h3 class="service-title-front" data-i18n="srv3-front">Cuidado Personal</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Pureza Natural</h3>
-                            <p class="service-description">Transformamos el aguacate en productos de bienestar premium y
+                            <h3 class="service-title-back" data-i18n="srv3-back-title">Pureza Natural</h3>
+                            <p class="service-description" data-i18n="srv3-back-desc">Transformamos el aguacate en productos de bienestar premium y
                                 orgánicos.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Natural</span>
-                                <span class="feature-tag">Bio-Cosmética</span>
+                                <span class="feature-tag" data-i18n="srv3-tag1">Natural</span>
+                                <span class="feature-tag" data-i18n="srv3-tag2">Bio-Cosmética</span>
                             </div>
                         </div>
                     </div>
@@ -164,16 +167,16 @@
                             <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800"
                                 alt="Sostenibilidad" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Sostenibilidad</h3>
+                                <h3 class="service-title-front" data-i18n="srv4-front">Sostenibilidad</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Eco-Compromiso</h3>
-                            <p class="service-description">Prácticas agrícolas regenerativas que protegen el suelo y el
+                            <h3 class="service-title-back" data-i18n="srv4-back-title">Eco-Compromiso</h3>
+                            <p class="service-description" data-i18n="srv4-back-desc">Prácticas agrícolas regenerativas que protegen el suelo y el
                                 futuro.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Regenerativo</span>
-                                <span class="feature-tag">Carbono Cero</span>
+                                <span class="feature-tag" data-i18n="srv4-tag1">Regenerativo</span>
+                                <span class="feature-tag" data-i18n="srv4-tag2">Carbono Cero</span>
                             </div>
                         </div>
                     </div>
@@ -186,16 +189,16 @@
                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
                                 alt="Innovación" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Innovación</h3>
+                                <h3 class="service-title-front" data-i18n="srv5-front">Innovación</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Tecnología Agro</h3>
-                            <p class="service-description">Implementamos soluciones tech para optimizar cada etapa del
+                            <h3 class="service-title-back" data-i18n="srv5-back-title">Tecnología Agro</h3>
+                            <p class="service-description" data-i18n="srv5-back-desc">Implementamos soluciones tech para optimizar cada etapa del
                                 cultivo.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Agro-Tech</span>
-                                <span class="feature-tag">IoT</span>
+                                <span class="feature-tag" data-i18n="srv5-tag1">Agro-Tech</span>
+                                <span class="feature-tag" data-i18n="srv5-tag2">IoT</span>
                             </div>
                         </div>
                     </div>
@@ -208,16 +211,16 @@
                             <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800"
                                 alt="Comunidad" class="service-image">
                             <div class="service-overlay">
-                                <h3 class="service-title-front">Comunidad</h3>
+                                <h3 class="service-title-front" data-i18n="srv6-front">Comunidad</h3>
                             </div>
                         </div>
                         <div class="service-card-back glass-card">
-                            <h3 class="service-title-back">Conexión con el Origen</h3>
-                            <p class="service-description">Creamos vínculos fuertes entre productores y consumidores
+                            <h3 class="service-title-back" data-i18n="srv6-back-title">Conexión con el Origen</h3>
+                            <p class="service-description" data-i18n="srv6-back-desc">Creamos vínculos fuertes entre productores y consumidores
                                 finales.</p>
                             <div class="service-features">
-                                <span class="feature-tag">Social</span>
-                                <span class="feature-tag">Productores</span>
+                                <span class="feature-tag" data-i18n="srv6-tag1">Social</span>
+                                <span class="feature-tag" data-i18n="srv6-tag2">Productores</span>
                             </div>
                         </div>
                     </div>
@@ -234,20 +237,20 @@
                 </div>
             </div>
             <div class="about-content">
-                <h2 class="section-title">Quiénes Somos</h2>
-                <p>Somos una sociedad de productores comprometidos con la excelencia agrícola y la sostenibilidad. En
+                <h2 class="section-title" data-i18n="about-title">Quiénes Somos</h2>
+                <p data-i18n="about-p1">Somos una sociedad de productores comprometidos con la excelencia agrícola y la sostenibilidad. En
                     Montesur, no solo cultivamos aguacate; cultivamos futuro.</p>
-                <p>Con 39 hectáreas de producción propia, garantizamos la trazabilidad total de nuestros productos,
+                <p data-i18n="about-p2">Con 39 hectáreas de producción propia, garantizamos la trazabilidad total de nuestros productos,
                     desde la semilla hasta tu mano, asegurando que cada fruto cumpla con nuestra promesa de bienestar.
                 </p>
                 <div class="about-stats">
                     <div class="stat-box">
                         <span class="stat-number">100%</span>
-                        <span class="stat-text">Orgánico</span>
+                        <span class="stat-text" data-i18n="about-stat1">Orgánico</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-number">Global</span>
-                        <span class="stat-text">Exportación</span>
+                        <span class="stat-text" data-i18n="about-stat2">Exportación</span>
                     </div>
                 </div>
             </div>
@@ -256,9 +259,9 @@
 
     <section class="cta-final">
         <div class="container text-center">
-            <h2 class="cta-title">¿Listo para conectar con lo natural?</h2>
-            <p class="cta-desc">Únete a la comunidad Montesur y descubre el siguiente nivel de bienestar integral.</p>
-            <a href="#contact" class="btn btn-primary btn-large btn-pulse">Contactar Ahora</a>
+            <h2 class="cta-title" data-i18n="cta-title">¿Listo para conectar con lo natural?</h2>
+            <p class="cta-desc" data-i18n="cta-desc">Únete a la comunidad Montesur y descubre el siguiente nivel de bienestar integral.</p>
+            <a href="#contact" class="btn btn-primary btn-large btn-pulse" data-i18n="cta-btn">Contactar Ahora</a>
         </div>
     </section>
 
@@ -268,39 +271,40 @@
                 <div class="logo">
                     <img src="images/logo.svg" alt="Montesur" class="logo-img">
                 </div>
-                <p class="footer-tagline">Excelencia desde el origen.</p>
+                <p class="footer-tagline" data-i18n="ft-tagline">Excelencia desde el origen.</p>
             </div>
             <div class="footer-links">
                 <div class="footer-col">
-                    <h4>Servicios</h4>
+                    <h4 data-i18n="ft-col1-title">Servicios</h4>
                     <ul>
-                        <li><a href="#">Exportación</a></li>
-                        <li><a href="#">Cuidado Personal</a></li>
-                        <li><a href="#">Tecnología</a></li>
+                        <li><a href="#" data-i18n="ft-col1-link1">Exportación</a></li>
+                        <li><a href="#" data-i18n="ft-col1-link2">Cuidado Personal</a></li>
+                        <li><a href="#" data-i18n="ft-col1-link3">Tecnología</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Empresa</h4>
+                    <h4 data-i18n="ft-col2-title">Empresa</h4>
                     <ul>
-                        <li><a href="#about">Nosotros</a></li>
-                        <li><a href="#">Sostenibilidad</a></li>
-                        <li><a href="#">Certificaciones</a></li>
+                        <li><a href="#about" data-i18n="ft-col2-link1">Nosotros</a></li>
+                        <li><a href="#" data-i18n="ft-col2-link2">Sostenibilidad</a></li>
+                        <li><a href="#" data-i18n="ft-col2-link3">Certificaciones</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="ft-col3-title">Legal</h4>
                     <ul>
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">Términos</a></li>
+                        <li><a href="#" data-i18n="ft-col3-link1">Privacidad</a></li>
+                        <li><a href="#" data-i18n="ft-col3-link2">Términos</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>&copy; 2026 Montesur. Todos los derechos reservados.</p>
+            <p data-i18n="ft-bottom">&copy; 2026 Montesur. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

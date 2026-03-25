@@ -4,11 +4,14 @@ Una landing page de lujo diseñada para **Montesur**, enfocada en la agroindustr
 
 ## 🚀 Características
 
+- **Soporte Multilingüe (ES/EN):** Sistema de traducción dinámico en JavaScript que permite cambiar el idioma instantáneamente sin recargar la página.
+- **Documentación Educativa:** Código HTML documentado con comentarios descriptivos detallados por bloque (Hero, Nav, Métricas, etc.) para facilitar el aprendizaje de su estructura.
 - **Diseño Dark Luxury:** Fondo negro puro con elementos en gris ultra-oscuro y acentos verdes.
 - **Glassmorphism:** Uso intensivo de efectos de desenfoque de fondo y transparencias en cards y navegación.
 - **Interacción 3D:** Flip cards interactivas para los servicios, revelando detalles al pasar el cursor.
 - **Sistema de Partículas:** Un fondo dinámico con partículas flotantes que añaden profundidad.
 - **Animaciones de Scroll:** Revelado suave de secciones y contadores animados para las métricas de negocio.
+- **Favicon Personalizado:** Inclusión de identidad de marca (avocado-theme) en la pestaña del navegador.
 - **Responsive Design:** Totalmente adaptada desde monitores XL hasta dispositivos móviles.
 
 ## 🎨 Sistema de Diseño
@@ -32,7 +35,9 @@ Debido a limitaciones temporales en la generación de imágenes por IA, se han u
 /
 ├── index.html      # Estructura y contenido
 ├── styles.css       # Estilos, animaciones y responsive
-├── script.js        # Lógica de animaciones y partículas
+├── script.js        # Lógica de animaciones, scroll y menú móvil
+├── translations.js  # Sistema de diccionarios y lógica multi-idioma
+├── favicon.png      # Icono de la web
 └── images/
     └── logo.svg     # Logo corporativo Montesur
 ```

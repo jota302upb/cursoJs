@@ -1,4 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Language Toggle System
+    const langToggleBtn = document.getElementById('lang-toggle');
+    let currentLang = localStorage.getItem('montesur_lang') || 'es';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('montesur_lang', lang);
+        
+        // Update toggle button text
+        if (langToggleBtn) {
+            langToggleBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+        }
+
+        // Apply translations
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+    }
+
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+            setLanguage(currentLang === 'es' ? 'en' : 'es');
+        });
+    }
+
+    // Initialize language
+    setLanguage(currentLang);
+
     // 1. Particle System
     const particlesContainer = document.getElementById('particles-container');
     const particleCount = 40;

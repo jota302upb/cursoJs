@@ -152,6 +152,34 @@ h4 {
     width: 100%;
 }
 
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-lang {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-lang:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-500);
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -223,9 +251,12 @@ h4 {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     margin-bottom: 24px;
     letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-wrap: balance;
 }
 
 .glow-text {
+    display: block;
     color: var(--primary-400);
     text-shadow: 0 0 30px rgba(75, 99, 35, 0.5);
 }
